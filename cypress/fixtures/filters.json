@@ -1,0 +1,1865 @@
+{
+  "name": "filters",
+  "values": [
+    {
+      "optionGroup": "Product\/Cart Item",
+      "options": {
+        "id": {
+          "title": "ID",
+          "component": "string",
+          "condition": {
+            "equal": "Equal",
+            "not_equal": "Not Equal",
+            "contain": "Contain",
+            "not_contain": "Does Not Contain",
+            "start_with": "Start With",
+            "end_with": "End With",
+            "greater": "Greater Than",
+            "greater_equal": "Greater Than or Equal",
+            "lesser": "Less Than",
+            "lesser_equal": "Less Than or Equal",
+            "between": "Between",
+            "date_between": "Date Between",
+            "within_past": "Within Past",
+            "earlier_than": "Earlier Than",
+            "in_list": "In List",
+            "not_in_list": "Not In List"
+          },
+          "input_type": "number",
+          "fields": {
+            "compare": "",
+            "condition": "",
+            "compare_with": "",
+            "operator": ""
+          }
+        },
+        "sku": {
+          "title": "SKU",
+          "component": "string",
+          "condition": {
+            "equal": "Equal",
+            "not_equal": "Not Equal",
+            "contain": "Contain",
+            "not_contain": "Does Not Contain",
+            "start_with": "Start With",
+            "end_with": "End With"
+          },
+          "input_type": "text",
+          "fields": {
+            "compare": "",
+            "condition": "",
+            "compare_with": "",
+            "operator": ""
+          }
+        },
+        "title": {
+          "title": "Title",
+          "component": "string",
+          "condition": {
+            "equal": "Equal",
+            "not_equal": "Not Equal",
+            "contain": "Contain",
+            "not_contain": "Does Not Contain",
+            "start_with": "Start With",
+            "end_with": "End With"
+          },
+          "input_type": "text",
+          "fields": {
+            "compare": "",
+            "condition": "",
+            "compare_with": "",
+            "operator": ""
+          }
+        },
+        "description": {
+          "title": "Description",
+          "component": "string",
+          "condition": {
+            "equal": "Equal",
+            "not_equal": "Not Equal",
+            "contain": "Contain",
+            "not_contain": "Does Not Contain",
+            "start_with": "Start With",
+            "end_with": "End With"
+          },
+          "input_type": "text",
+          "fields": {
+            "compare": "",
+            "condition": "",
+            "compare_with": "",
+            "operator": ""
+          }
+        },
+        "short_description": {
+          "title": "Short Description",
+          "component": "string",
+          "condition": {
+            "equal": "Equal",
+            "not_equal": "Not Equal",
+            "contain": "Contain",
+            "not_contain": "Does Not Contain",
+            "start_with": "Start With",
+            "end_with": "End With"
+          },
+          "input_type": "text",
+          "fields": {
+            "compare": "",
+            "condition": "",
+            "compare_with": "",
+            "operator": ""
+          }
+        },
+        "attributes": {
+          "title": "Attributes",
+          "component": "string",
+          "condition": {
+            "in_list": "In List",
+            "not_in_list": "Not In List"
+          },
+          "input_type": {
+            "type": "select",
+            "option_type": "api",
+            "multiple": true,
+            "endpoint": "http:\/\/localhost\/quasar\/wp-json\/disco\/v1\/search\/attribute\/?search="
+          },
+          "fields": {
+            "compare": "",
+            "condition": "",
+            "compare_with": "",
+            "operator": ""
+          }
+        },
+        "categories": {
+          "title": "Categories",
+          "component": "string",
+          "condition": {
+            "in_list": "In List",
+            "not_in_list": "Not In List"
+          },
+          "input_type": {
+            "type": "select",
+            "option_type": "api",
+            "multiple": true,
+            "endpoint": "http:\/\/localhost\/quasar\/wp-json\/disco\/v1\/search\/category\/?search="
+          },
+          "fields": {
+            "compare": "",
+            "condition": "",
+            "compare_with": "",
+            "operator": ""
+          }
+        },
+        "tags": {
+          "title": "Tags",
+          "component": "string",
+          "condition": {
+            "in_list": "In List",
+            "not_in_list": "Not In List"
+          },
+          "input_type": {
+            "type": "select",
+            "option_type": "api",
+            "multiple": true,
+            "endpoint": "http:\/\/localhost\/quasar\/wp-json\/disco\/v1\/search\/tag\/?search="
+          },
+          "fields": {
+            "compare": "",
+            "condition": "",
+            "compare_with": "",
+            "operator": ""
+          }
+        },
+        "link": {
+          "title": "URL",
+          "component": "string",
+          "condition": {
+            "equal": "Equal",
+            "not_equal": "Not Equal",
+            "contain": "Contain",
+            "not_contain": "Does Not Contain",
+            "start_with": "Start With",
+            "end_with": "End With"
+          },
+          "input_type": "text",
+          "fields": {
+            "compare": "",
+            "condition": "",
+            "compare_with": "",
+            "operator": ""
+          }
+        },
+        "availability": {
+          "title": "Availability",
+          "component": "string",
+          "condition": {
+            "equal": "Equal",
+            "not_equal": "Not Equal",
+            "contain": "Contain",
+            "not_contain": "Does Not Contain",
+            "start_with": "Start With",
+            "end_with": "End With"
+          },
+          "input_type": "text",
+          "fields": {
+            "compare": "",
+            "condition": "",
+            "compare_with": "",
+            "operator": ""
+          }
+        },
+        "quantity": {
+          "title": "Quantity",
+          "component": "string",
+          "condition": {
+            "equal": "Equal",
+            "not_equal": "Not Equal",
+            "contain": "Contain",
+            "not_contain": "Does Not Contain",
+            "greater": "Greater Than",
+            "greater_equal": "Greater Than or Equal",
+            "lesser": "Less Than",
+            "lesser_equal": "Less Than or Equal",
+            "between": "Between"
+          },
+          "input_type": "text",
+          "fields": {
+            "compare": "",
+            "condition": "",
+            "compare_with": "",
+            "operator": ""
+          }
+        },
+        "stock_status": {
+          "title": "Stock Status",
+          "component": "string",
+          "condition": {
+            "in_list": "In List",
+            "not_in_list": "Not In List"
+          },
+          "input_type": {
+            "type": "select",
+            "option_type": "manual",
+            "multiple": true,
+            "options": {
+              "instock": "In stock",
+              "outofstock": "Out of stock",
+              "onbackorder": "On backorder"
+            }
+          },
+          "fields": {
+            "compare": "",
+            "condition": "",
+            "compare_with": "",
+            "operator": ""
+          }
+        },
+        "weight": {
+          "title": "Weight",
+          "component": "string",
+          "condition": {
+            "equal": "Equal",
+            "not_equal": "Not Equal",
+            "contain": "Contain",
+            "not_contain": "Does Not Contain",
+            "start_with": "Start With",
+            "end_with": "End With"
+          },
+          "input_type": "text",
+          "fields": {
+            "compare": "",
+            "condition": "",
+            "compare_with": "",
+            "operator": ""
+          }
+        },
+        "weight_unit": {
+          "title": "Weight Unit",
+          "component": "string",
+          "condition": {
+            "in_list": "In List",
+            "not_in_list": "Not In List"
+          },
+          "input_type": {
+            "type": "select",
+            "option_type": "manual",
+            "multiple": false,
+            "options": {
+              "kg": "kg",
+              "g": "g",
+              "lb": "lb",
+              "oz": "oz"
+            }
+          },
+          "fields": {
+            "compare": "",
+            "condition": "",
+            "compare_with": "",
+            "operator": ""
+          }
+        },
+        "width": {
+          "title": "Width",
+          "component": "string",
+          "condition": {
+            "equal": "Equal",
+            "not_equal": "Not Equal",
+            "contain": "Contain",
+            "not_contain": "Does Not Contain",
+            "start_with": "Start With",
+            "end_with": "End With"
+          },
+          "input_type": "text",
+          "fields": {
+            "compare": "",
+            "condition": "",
+            "compare_with": "",
+            "operator": ""
+          }
+        },
+        "height": {
+          "title": "Height",
+          "component": "string",
+          "condition": {
+            "equal": "Equal",
+            "not_equal": "Not Equal",
+            "contain": "Contain",
+            "not_contain": "Does Not Contain",
+            "start_with": "Start With",
+            "end_with": "End With"
+          },
+          "input_type": "text",
+          "fields": {
+            "compare": "",
+            "condition": "",
+            "compare_with": "",
+            "operator": ""
+          }
+        },
+        "length": {
+          "title": "Length",
+          "component": "string",
+          "condition": {
+            "equal": "Equal",
+            "not_equal": "Not Equal",
+            "contain": "Contain",
+            "not_contain": "Does Not Contain",
+            "start_with": "Start With",
+            "end_with": "End With"
+          },
+          "input_type": "text",
+          "fields": {
+            "compare": "",
+            "condition": "",
+            "compare_with": "",
+            "operator": ""
+          }
+        },
+        "type": {
+          "title": "Product Type",
+          "component": "string",
+          "condition": {
+            "in_list": "In List",
+            "not_in_list": "Not In List"
+          },
+          "input_type": {
+            "type": "select",
+            "option_type": "manual",
+            "multiple": true,
+            "options": {
+              "simple": "Simple product",
+              "grouped": "Grouped product",
+              "external": "External\/Affiliate product",
+              "variable": "Variable product"
+            }
+          },
+          "fields": {
+            "compare": "",
+            "condition": "",
+            "compare_with": "",
+            "operator": ""
+          }
+        },
+        "visibility": {
+          "title": "Visibility",
+          "component": "string",
+          "condition": {
+            "in_list": "In List",
+            "not_in_list": "Not In List"
+          },
+          "input_type": {
+            "type": "select",
+            "option_type": "manual",
+            "multiple": true,
+            "options": {
+              "visible": "Shop and search results",
+              "catalog": "Shop only",
+              "search": "Search results only",
+              "hidden": "Hidden"
+            }
+          },
+          "fields": {
+            "compare": "",
+            "condition": "",
+            "compare_with": "",
+            "operator": ""
+          }
+        },
+        "rating_total": {
+          "title": "Total Rating",
+          "component": "string",
+          "condition": {
+            "equal": "Equal",
+            "not_equal": "Not Equal",
+            "contain": "Contain",
+            "not_contain": "Does Not Contain",
+            "start_with": "Start With",
+            "end_with": "End With"
+          },
+          "input_type": "text",
+          "fields": {
+            "compare": "",
+            "condition": "",
+            "compare_with": "",
+            "operator": ""
+          }
+        },
+        "rating_average": {
+          "title": "Average Rating",
+          "component": "string",
+          "condition": {
+            "equal": "Equal",
+            "not_equal": "Not Equal",
+            "contain": "Contain",
+            "not_contain": "Does Not Contain",
+            "start_with": "Start With",
+            "end_with": "End With"
+          },
+          "input_type": "text",
+          "fields": {
+            "compare": "",
+            "condition": "",
+            "compare_with": "",
+            "operator": ""
+          }
+        },
+        "author_name": {
+          "title": "Author Name",
+          "component": "string",
+          "condition": {
+            "in_list": "In List",
+            "not_in_list": "Not In List"
+          },
+          "input_type": {
+            "type": "select",
+            "option_type": "api",
+            "multiple": true,
+            "endpoint": "http:\/\/localhost\/quasar\/wp-json\/disco\/v1\/search\/customer\/?search="
+          },
+          "fields": {
+            "compare": "",
+            "condition": "",
+            "compare_with": "",
+            "operator": ""
+          }
+        },
+        "author_email": {
+          "title": "Author Email",
+          "component": "string",
+          "condition": {
+            "in_list": "In List",
+            "not_in_list": "Not In List"
+          },
+          "input_type": {
+            "type": "select",
+            "option_type": "api",
+            "multiple": true,
+            "endpoint": "http:\/\/localhost\/quasar\/wp-json\/disco\/v1\/search\/customer\/?search="
+          },
+          "fields": {
+            "compare": "",
+            "condition": "",
+            "compare_with": "",
+            "operator": ""
+          }
+        },
+        "date_created": {
+          "title": "Date Created",
+          "component": "string",
+          "condition": {
+            "equal": "Equal",
+            "not_equal": "Not Equal",
+            "greater": "Greater Than",
+            "greater_equal": "Greater Than or Equal",
+            "lesser": "Less Than",
+            "lesser_equal": "Less Than or Equal",
+            "between": "Between",
+            "date_between": "Date Between",
+            "within_past": "Within Past",
+            "earlier_than": "Earlier Than"
+          },
+          "input_type": "date",
+          "fields": {
+            "compare": "",
+            "condition": "",
+            "compare_with": "",
+            "operator": ""
+          }
+        },
+        "date_updated": {
+          "title": "Date Updated",
+          "component": "string",
+          "condition": {
+            "equal": "Equal",
+            "not_equal": "Not Equal",
+            "greater": "Greater Than",
+            "greater_equal": "Greater Than or Equal",
+            "lesser": "Less Than",
+            "lesser_equal": "Less Than or Equal",
+            "between": "Between",
+            "date_between": "Date Between",
+            "within_past": "Within Past",
+            "earlier_than": "Earlier Than"
+          },
+          "input_type": "date",
+          "fields": {
+            "compare": "",
+            "condition": "",
+            "compare_with": "",
+            "operator": ""
+          }
+        },
+        "product_status": {
+          "title": "Status",
+          "component": "string",
+          "condition": {
+            "in_list": "In List",
+            "not_in_list": "Not In List"
+          },
+          "input_type": {
+            "type": "select",
+            "option_type": "manual",
+            "multiple": false,
+            "options": {
+              "publish": "Publish",
+              "draft": "Draft",
+              "pending": "Pending",
+              "private": "Private"
+            }
+          },
+          "fields": {
+            "compare": "",
+            "condition": "",
+            "compare_with": "",
+            "operator": ""
+          }
+        },
+        "featured_status": {
+          "title": "Featured Status",
+          "component": "string",
+          "condition": {
+            "in_list": "In List",
+            "not_in_list": "Not In List"
+          },
+          "input_type": {
+            "type": "select",
+            "option_type": "manual",
+            "multiple": false,
+            "options": {
+              "yes": "Yes",
+              "no": "No"
+            }
+          },
+          "fields": {
+            "compare": "",
+            "condition": "",
+            "compare_with": "",
+            "operator": ""
+          }
+        }
+      }
+    },
+    {
+      "optionGroup": "Price",
+      "options": {
+        "currency": {
+          "title": "Currency",
+          "component": "string",
+          "condition": {
+            "equal": "Equal",
+            "not_equal": "Not Equal",
+            "contain": "Contain",
+            "not_contain": "Does Not Contain",
+            "start_with": "Start With",
+            "end_with": "End With"
+          },
+          "input_type": "text",
+          "fields": {
+            "compare": "",
+            "condition": "",
+            "compare_with": "",
+            "operator": ""
+          }
+        },
+        "regular_price": {
+          "title": "Regular Price",
+          "component": "string",
+          "condition": {
+            "equal": "Equal",
+            "not_equal": "Not Equal",
+            "contain": "Contain",
+            "not_contain": "Does Not Contain",
+            "greater": "Greater Than",
+            "greater_equal": "Greater Than or Equal",
+            "lesser": "Less Than",
+            "lesser_equal": "Less Than or Equal",
+            "between": "Between"
+          },
+          "input_type": "number",
+          "fields": {
+            "compare": "",
+            "condition": "",
+            "compare_with": "",
+            "operator": ""
+          }
+        },
+        "price": {
+          "title": "Price",
+          "component": "string",
+          "condition": {
+            "equal": "Equal",
+            "not_equal": "Not Equal",
+            "contain": "Contain",
+            "not_contain": "Does Not Contain",
+            "greater": "Greater Than",
+            "greater_equal": "Greater Than or Equal",
+            "lesser": "Less Than",
+            "lesser_equal": "Less Than or Equal",
+            "between": "Between"
+          },
+          "input_type": "number",
+          "fields": {
+            "compare": "",
+            "condition": "",
+            "compare_with": "",
+            "operator": ""
+          }
+        },
+        "sale_price": {
+          "title": "Sale Price",
+          "component": "string",
+          "condition": {
+            "equal": "Equal",
+            "not_equal": "Not Equal",
+            "contain": "Contain",
+            "not_contain": "Does Not Contain",
+            "greater": "Greater Than",
+            "greater_equal": "Greater Than or Equal",
+            "lesser": "Less Than",
+            "lesser_equal": "Less Than or Equal",
+            "between": "Between"
+          },
+          "input_type": "number",
+          "fields": {
+            "compare": "",
+            "condition": "",
+            "compare_with": "",
+            "operator": ""
+          }
+        },
+        "regular_price_with_tax": {
+          "title": "Regular Price With Tax",
+          "component": "string",
+          "condition": {
+            "equal": "Equal",
+            "not_equal": "Not Equal",
+            "contain": "Contain",
+            "not_contain": "Does Not Contain",
+            "greater": "Greater Than",
+            "greater_equal": "Greater Than or Equal",
+            "lesser": "Less Than",
+            "lesser_equal": "Less Than or Equal",
+            "between": "Between"
+          },
+          "input_type": "number",
+          "fields": {
+            "compare": "",
+            "condition": "",
+            "compare_with": "",
+            "operator": ""
+          }
+        },
+        "price_with_tax": {
+          "title": "Price With Tax",
+          "component": "string",
+          "condition": {
+            "equal": "Equal",
+            "not_equal": "Not Equal",
+            "contain": "Contain",
+            "not_contain": "Does Not Contain",
+            "greater": "Greater Than",
+            "greater_equal": "Greater Than or Equal",
+            "lesser": "Less Than",
+            "lesser_equal": "Less Than or Equal",
+            "between": "Between"
+          },
+          "input_type": "number",
+          "fields": {
+            "compare": "",
+            "condition": "",
+            "compare_with": "",
+            "operator": ""
+          }
+        },
+        "sale_price_with_tax": {
+          "title": "Sale Price With Tax",
+          "component": "string",
+          "condition": {
+            "equal": "Equal",
+            "not_equal": "Not Equal",
+            "contain": "Contain",
+            "not_contain": "Does Not Contain",
+            "greater": "Greater Than",
+            "greater_equal": "Greater Than or Equal",
+            "lesser": "Less Than",
+            "lesser_equal": "Less Than or Equal",
+            "between": "Between"
+          },
+          "input_type": "number",
+          "fields": {
+            "compare": "",
+            "condition": "",
+            "compare_with": "",
+            "operator": ""
+          }
+        },
+        "sale_price_sdate": {
+          "title": "Sale Start Date",
+          "component": "string",
+          "condition": {
+            "equal": "Equal",
+            "not_equal": "Not Equal",
+            "contain": "Contain",
+            "not_contain": "Does Not Contain",
+            "greater": "Greater Than",
+            "greater_equal": "Greater Than or Equal",
+            "lesser": "Less Than",
+            "lesser_equal": "Less Than or Equal",
+            "between": "Between"
+          },
+          "input_type": "number",
+          "fields": {
+            "compare": "",
+            "condition": "",
+            "compare_with": "",
+            "operator": ""
+          }
+        },
+        "sale_price_edate": {
+          "title": "Sale End Date",
+          "component": "string",
+          "condition": {
+            "equal": "Equal",
+            "not_equal": "Not Equal",
+            "contain": "Contain",
+            "not_contain": "Does Not Contain",
+            "greater": "Greater Than",
+            "greater_equal": "Greater Than or Equal",
+            "lesser": "Less Than",
+            "lesser_equal": "Less Than or Equal",
+            "between": "Between"
+          },
+          "input_type": "number",
+          "fields": {
+            "compare": "",
+            "condition": "",
+            "compare_with": "",
+            "operator": ""
+          }
+        }
+      }
+    },
+    {
+      "optionGroup": "Product Attributes",
+      "options": {
+        "global_attribute_pa_color": {
+          "title": "Color",
+          "component": "string",
+          "condition": {
+            "in_list": "In List",
+            "not_in_list": "Not In List"
+          },
+          "input_type": {
+            "type": "select",
+            "option_type": "manual",
+            "multiple": true,
+            "options": {
+              "21": "Blue",
+              "27": "Gray",
+              "22": "Green",
+              "23": "Red",
+              "28": "Yellow"
+            }
+          },
+          "fields": {
+            "compare": "",
+            "condition": "",
+            "compare_with": "",
+            "operator": ""
+          }
+        },
+        "global_attribute_pa_size": {
+          "title": "Size",
+          "component": "string",
+          "condition": {
+            "in_list": "In List",
+            "not_in_list": "Not In List"
+          },
+          "input_type": {
+            "type": "select",
+            "option_type": "manual",
+            "multiple": true,
+            "options": {
+              "24": "Large",
+              "25": "Medium",
+              "26": "Small"
+            }
+          },
+          "fields": {
+            "compare": "",
+            "condition": "",
+            "compare_with": "",
+            "operator": ""
+          }
+        }
+      }
+    },
+    {
+      "optionGroup": "Product Custom Attributes",
+      "options": {
+        "custom_attribute_logo": {
+          "title": "Logo",
+          "component": "string",
+          "condition": {
+            "equal": "Equal",
+            "not_equal": "Not Equal",
+            "contain": "Contain",
+            "not_contain": "Does Not Contain",
+            "start_with": "Start With",
+            "end_with": "End With"
+          },
+          "input_type": "text",
+          "fields": {
+            "compare": "",
+            "condition": "",
+            "compare_with": "",
+            "operator": ""
+          }
+        }
+      }
+    },
+    {
+      "optionGroup": "Custom Fields &amp; Post Metas",
+      "options": {
+        "product_meta_total_sales": {
+          "title": "total_sales",
+          "component": "string",
+          "condition": {
+            "equal": "Equal",
+            "not_equal": "Not Equal",
+            "contain": "Contain",
+            "not_contain": "Does Not Contain",
+            "start_with": "Start With",
+            "end_with": "End With"
+          },
+          "input_type": "text",
+          "fields": {
+            "compare": "",
+            "condition": "",
+            "compare_with": "",
+            "operator": ""
+          }
+        },
+        "product_meta__tax_status": {
+          "title": "_tax_status",
+          "component": "string",
+          "condition": {
+            "equal": "Equal",
+            "not_equal": "Not Equal",
+            "contain": "Contain",
+            "not_contain": "Does Not Contain",
+            "start_with": "Start With",
+            "end_with": "End With"
+          },
+          "input_type": "text",
+          "fields": {
+            "compare": "",
+            "condition": "",
+            "compare_with": "",
+            "operator": ""
+          }
+        },
+        "product_meta__tax_class": {
+          "title": "_tax_class",
+          "component": "string",
+          "condition": {
+            "equal": "Equal",
+            "not_equal": "Not Equal",
+            "contain": "Contain",
+            "not_contain": "Does Not Contain",
+            "start_with": "Start With",
+            "end_with": "End With"
+          },
+          "input_type": "text",
+          "fields": {
+            "compare": "",
+            "condition": "",
+            "compare_with": "",
+            "operator": ""
+          }
+        },
+        "product_meta__manage_stock": {
+          "title": "_manage_stock",
+          "component": "string",
+          "condition": {
+            "equal": "Equal",
+            "not_equal": "Not Equal",
+            "contain": "Contain",
+            "not_contain": "Does Not Contain",
+            "start_with": "Start With",
+            "end_with": "End With"
+          },
+          "input_type": "text",
+          "fields": {
+            "compare": "",
+            "condition": "",
+            "compare_with": "",
+            "operator": ""
+          }
+        },
+        "product_meta__backorders": {
+          "title": "_backorders",
+          "component": "string",
+          "condition": {
+            "equal": "Equal",
+            "not_equal": "Not Equal",
+            "contain": "Contain",
+            "not_contain": "Does Not Contain",
+            "start_with": "Start With",
+            "end_with": "End With"
+          },
+          "input_type": "text",
+          "fields": {
+            "compare": "",
+            "condition": "",
+            "compare_with": "",
+            "operator": ""
+          }
+        },
+        "product_meta__sold_individually": {
+          "title": "_sold_individually",
+          "component": "string",
+          "condition": {
+            "equal": "Equal",
+            "not_equal": "Not Equal",
+            "contain": "Contain",
+            "not_contain": "Does Not Contain",
+            "start_with": "Start With",
+            "end_with": "End With"
+          },
+          "input_type": "text",
+          "fields": {
+            "compare": "",
+            "condition": "",
+            "compare_with": "",
+            "operator": ""
+          }
+        },
+        "product_meta__virtual": {
+          "title": "_virtual",
+          "component": "string",
+          "condition": {
+            "equal": "Equal",
+            "not_equal": "Not Equal",
+            "contain": "Contain",
+            "not_contain": "Does Not Contain",
+            "start_with": "Start With",
+            "end_with": "End With"
+          },
+          "input_type": "text",
+          "fields": {
+            "compare": "",
+            "condition": "",
+            "compare_with": "",
+            "operator": ""
+          }
+        },
+        "product_meta__downloadable": {
+          "title": "_downloadable",
+          "component": "string",
+          "condition": {
+            "equal": "Equal",
+            "not_equal": "Not Equal",
+            "contain": "Contain",
+            "not_contain": "Does Not Contain",
+            "start_with": "Start With",
+            "end_with": "End With"
+          },
+          "input_type": "text",
+          "fields": {
+            "compare": "",
+            "condition": "",
+            "compare_with": "",
+            "operator": ""
+          }
+        },
+        "product_meta__download_limit": {
+          "title": "_download_limit",
+          "component": "string",
+          "condition": {
+            "equal": "Equal",
+            "not_equal": "Not Equal",
+            "contain": "Contain",
+            "not_contain": "Does Not Contain",
+            "start_with": "Start With",
+            "end_with": "End With"
+          },
+          "input_type": "text",
+          "fields": {
+            "compare": "",
+            "condition": "",
+            "compare_with": "",
+            "operator": ""
+          }
+        },
+        "product_meta__download_expiry": {
+          "title": "_download_expiry",
+          "component": "string",
+          "condition": {
+            "equal": "Equal",
+            "not_equal": "Not Equal",
+            "contain": "Contain",
+            "not_contain": "Does Not Contain",
+            "start_with": "Start With",
+            "end_with": "End With"
+          },
+          "input_type": "text",
+          "fields": {
+            "compare": "",
+            "condition": "",
+            "compare_with": "",
+            "operator": ""
+          }
+        },
+        "product_meta__stock": {
+          "title": "_stock",
+          "component": "string",
+          "condition": {
+            "equal": "Equal",
+            "not_equal": "Not Equal",
+            "contain": "Contain",
+            "not_contain": "Does Not Contain",
+            "start_with": "Start With",
+            "end_with": "End With"
+          },
+          "input_type": "text",
+          "fields": {
+            "compare": "",
+            "condition": "",
+            "compare_with": "",
+            "operator": ""
+          }
+        },
+        "product_meta__stock_status": {
+          "title": "_stock_status",
+          "component": "string",
+          "condition": {
+            "equal": "Equal",
+            "not_equal": "Not Equal",
+            "contain": "Contain",
+            "not_contain": "Does Not Contain",
+            "start_with": "Start With",
+            "end_with": "End With"
+          },
+          "input_type": "text",
+          "fields": {
+            "compare": "",
+            "condition": "",
+            "compare_with": "",
+            "operator": ""
+          }
+        },
+        "product_meta__wc_average_rating": {
+          "title": "_wc_average_rating",
+          "component": "string",
+          "condition": {
+            "equal": "Equal",
+            "not_equal": "Not Equal",
+            "contain": "Contain",
+            "not_contain": "Does Not Contain",
+            "start_with": "Start With",
+            "end_with": "End With"
+          },
+          "input_type": "text",
+          "fields": {
+            "compare": "",
+            "condition": "",
+            "compare_with": "",
+            "operator": ""
+          }
+        },
+        "product_meta__wc_review_count": {
+          "title": "_wc_review_count",
+          "component": "string",
+          "condition": {
+            "equal": "Equal",
+            "not_equal": "Not Equal",
+            "contain": "Contain",
+            "not_contain": "Does Not Contain",
+            "start_with": "Start With",
+            "end_with": "End With"
+          },
+          "input_type": "text",
+          "fields": {
+            "compare": "",
+            "condition": "",
+            "compare_with": "",
+            "operator": ""
+          }
+        },
+        "product_meta__product_version": {
+          "title": "_product_version",
+          "component": "string",
+          "condition": {
+            "equal": "Equal",
+            "not_equal": "Not Equal",
+            "contain": "Contain",
+            "not_contain": "Does Not Contain",
+            "start_with": "Start With",
+            "end_with": "End With"
+          },
+          "input_type": "text",
+          "fields": {
+            "compare": "",
+            "condition": "",
+            "compare_with": "",
+            "operator": ""
+          }
+        },
+        "product_meta__regular_price": {
+          "title": "_regular_price",
+          "component": "string",
+          "condition": {
+            "equal": "Equal",
+            "not_equal": "Not Equal",
+            "contain": "Contain",
+            "not_contain": "Does Not Contain",
+            "start_with": "Start With",
+            "end_with": "End With"
+          },
+          "input_type": "text",
+          "fields": {
+            "compare": "",
+            "condition": "",
+            "compare_with": "",
+            "operator": ""
+          }
+        },
+        "product_meta__thumbnail_id": {
+          "title": "_thumbnail_id",
+          "component": "string",
+          "condition": {
+            "equal": "Equal",
+            "not_equal": "Not Equal",
+            "contain": "Contain",
+            "not_contain": "Does Not Contain",
+            "start_with": "Start With",
+            "end_with": "End With"
+          },
+          "input_type": "text",
+          "fields": {
+            "compare": "",
+            "condition": "",
+            "compare_with": "",
+            "operator": ""
+          }
+        },
+        "product_meta__price": {
+          "title": "_price",
+          "component": "string",
+          "condition": {
+            "equal": "Equal",
+            "not_equal": "Not Equal",
+            "contain": "Contain",
+            "not_contain": "Does Not Contain",
+            "start_with": "Start With",
+            "end_with": "End With"
+          },
+          "input_type": "text",
+          "fields": {
+            "compare": "",
+            "condition": "",
+            "compare_with": "",
+            "operator": ""
+          }
+        },
+        "product_meta__sale_price": {
+          "title": "_sale_price",
+          "component": "string",
+          "condition": {
+            "equal": "Equal",
+            "not_equal": "Not Equal",
+            "contain": "Contain",
+            "not_contain": "Does Not Contain",
+            "start_with": "Start With",
+            "end_with": "End With"
+          },
+          "input_type": "text",
+          "fields": {
+            "compare": "",
+            "condition": "",
+            "compare_with": "",
+            "operator": ""
+          }
+        },
+        "product_meta__product_image_gallery": {
+          "title": "_product_image_gallery",
+          "component": "string",
+          "condition": {
+            "equal": "Equal",
+            "not_equal": "Not Equal",
+            "contain": "Contain",
+            "not_contain": "Does Not Contain",
+            "start_with": "Start With",
+            "end_with": "End With"
+          },
+          "input_type": "text",
+          "fields": {
+            "compare": "",
+            "condition": "",
+            "compare_with": "",
+            "operator": ""
+          }
+        }
+      }
+    },
+    {
+      "optionGroup": "Tax and Shipping",
+      "options": {
+        "tax_class": {
+          "title": "Tax Class",
+          "component": "string",
+          "condition": {
+            "equal": "Equal",
+            "not_equal": "Not Equal",
+            "contain": "Contain",
+            "not_contain": "Does Not Contain",
+            "start_with": "Start With",
+            "end_with": "End With"
+          },
+          "input_type": "text",
+          "fields": {
+            "compare": "",
+            "condition": "",
+            "compare_with": "",
+            "operator": ""
+          }
+        },
+        "tax_status": {
+          "title": "Tax Status",
+          "component": "string",
+          "condition": {
+            "equal": "Equal",
+            "not_equal": "Not Equal",
+            "contain": "Contain",
+            "not_contain": "Does Not Contain",
+            "start_with": "Start With",
+            "end_with": "End With"
+          },
+          "input_type": "text",
+          "fields": {
+            "compare": "",
+            "condition": "",
+            "compare_with": "",
+            "operator": ""
+          }
+        },
+        "shipping_class": {
+          "title": "Shipping Class",
+          "component": "string",
+          "condition": {
+            "equal": "Equal",
+            "not_equal": "Not Equal",
+            "contain": "Contain",
+            "not_contain": "Does Not Contain",
+            "start_with": "Start With",
+            "end_with": "End With"
+          },
+          "input_type": "text",
+          "fields": {
+            "compare": "",
+            "condition": "",
+            "compare_with": "",
+            "operator": ""
+          }
+        }
+      }
+    },
+    {
+      "optionGroup": "Cart",
+      "options": {
+        "cart_items_count": {
+          "title": "Cart Items Count",
+          "component": "string",
+          "condition": {
+            "equal": "Equal",
+            "not_equal": "Not Equal",
+            "contain": "Contain",
+            "not_contain": "Does Not Contain",
+            "greater": "Greater Than",
+            "greater_equal": "Greater Than or Equal",
+            "lesser": "Less Than",
+            "lesser_equal": "Less Than or Equal",
+            "between": "Between"
+          },
+          "input_type": "text",
+          "fields": {
+            "compare": "",
+            "condition": "",
+            "compare_with": "",
+            "operator": ""
+          }
+        },
+        "cart_items_quantity": {
+          "title": "Cart Items Quantity",
+          "component": "string",
+          "condition": {
+            "equal": "Equal",
+            "not_equal": "Not Equal",
+            "contain": "Contain",
+            "not_contain": "Does Not Contain",
+            "greater": "Greater Than",
+            "greater_equal": "Greater Than or Equal",
+            "lesser": "Less Than",
+            "lesser_equal": "Less Than or Equal",
+            "between": "Between"
+          },
+          "input_type": "text",
+          "fields": {
+            "compare": "",
+            "condition": "",
+            "compare_with": "",
+            "operator": ""
+          }
+        },
+        "cart_total_weight": {
+          "title": "Cart Items Total Weight",
+          "component": "string",
+          "condition": {
+            "equal": "Equal",
+            "not_equal": "Not Equal",
+            "contain": "Contain",
+            "not_contain": "Does Not Contain",
+            "greater": "Greater Than",
+            "greater_equal": "Greater Than or Equal",
+            "lesser": "Less Than",
+            "lesser_equal": "Less Than or Equal",
+            "between": "Between"
+          },
+          "input_type": "text",
+          "fields": {
+            "compare": "",
+            "condition": "",
+            "compare_with": "",
+            "operator": ""
+          }
+        },
+        "cart_subtotal": {
+          "title": "Cart Subtotal",
+          "component": "string",
+          "condition": {
+            "equal": "Equal",
+            "not_equal": "Not Equal",
+            "contain": "Contain",
+            "not_contain": "Does Not Contain",
+            "greater": "Greater Than",
+            "greater_equal": "Greater Than or Equal",
+            "lesser": "Less Than",
+            "lesser_equal": "Less Than or Equal",
+            "between": "Between"
+          },
+          "input_type": "text",
+          "fields": {
+            "compare": "",
+            "condition": "",
+            "compare_with": "",
+            "operator": ""
+          }
+        },
+        "cart_payment_method": {
+          "title": "Payment Method",
+          "component": "string",
+          "condition": {
+            "in_list": "In List",
+            "not_in_list": "Not In List"
+          },
+          "input_type": {
+            "type": "select",
+            "option_type": "manual",
+            "multiple": true,
+            "options": {
+              "cod": "Cash on delivery"
+            }
+          },
+          "fields": {
+            "compare": "",
+            "condition": "",
+            "compare_with": "",
+            "operator": ""
+          }
+        },
+        "cart_coupons": {
+          "title": "Cart Coupons",
+          "component": "string",
+          "condition": {
+            "in_list": "In List",
+            "not_in_list": "Not In List"
+          },
+          "input_type": {
+            "type": "select",
+            "option_type": "api",
+            "multiple": true,
+            "endpoint": "http:\/\/localhost\/quasar\/wp-json\/disco\/v1\/search\/coupon\/?search="
+          },
+          "fields": {
+            "compare": "",
+            "condition": "",
+            "compare_with": "",
+            "operator": ""
+          }
+        }
+      }
+    },
+    {
+      "optionGroup": "Product Purchase History",
+      "options": {
+        "product_history_last_order_date": {
+          "title": "Last Order Date",
+          "component": "string",
+          "condition": {
+            "equal": "Equal",
+            "not_equal": "Not Equal",
+            "greater": "Greater Than",
+            "greater_equal": "Greater Than or Equal",
+            "lesser": "Less Than",
+            "lesser_equal": "Less Than or Equal",
+            "between": "Between",
+            "date_between": "Date Between",
+            "within_past": "Within Past",
+            "earlier_than": "Earlier Than"
+          },
+          "input_type": "date",
+          "fields": {
+            "compare": "",
+            "condition": "",
+            "compare_with": "",
+            "operator": ""
+          }
+        },
+        "product_history_total_order_made": {
+          "title": "Number of Order Made with Following Products",
+          "component": "string",
+          "condition": {
+            "in_list": "In List",
+            "not_in_list": "Not In List"
+          },
+          "input_type": {
+            "type": "select",
+            "option_type": "api",
+            "multiple": true,
+            "endpoint": "http:\/\/localhost\/quasar\/wp-json\/disco\/v1\/search\/product\/?search="
+          },
+          "fields": {
+            "compare": "",
+            "condition": "",
+            "compare_with": "",
+            "operator": ""
+          }
+        },
+        "product_history_total_amount_sold": {
+          "title": "Number of Amount Sold with Following Products",
+          "component": "string",
+          "condition": {
+            "in_list": "In List",
+            "not_in_list": "Not In List"
+          },
+          "input_type": {
+            "type": "select",
+            "option_type": "api",
+            "multiple": true,
+            "endpoint": "http:\/\/localhost\/quasar\/wp-json\/disco\/v1\/search\/product\/?search="
+          },
+          "fields": {
+            "compare": "",
+            "condition": "",
+            "compare_with": "",
+            "operator": ""
+          }
+        },
+        "product_history_total_quantity_sold": {
+          "title": "Number of Quantities Sold with Following Products",
+          "component": "string",
+          "condition": {
+            "in_list": "In List",
+            "not_in_list": "Not In List"
+          },
+          "input_type": {
+            "type": "select",
+            "option_type": "api",
+            "multiple": true,
+            "endpoint": "http:\/\/localhost\/quasar\/wp-json\/disco\/v1\/search\/product\/?search="
+          },
+          "fields": {
+            "compare": "",
+            "condition": "",
+            "compare_with": "",
+            "operator": ""
+          }
+        }
+      }
+    },
+    {
+      "optionGroup": "Customer",
+      "options": {
+        "customer_email": {
+          "title": "Email",
+          "component": "string",
+          "condition": {
+            "in_list": "In List",
+            "not_in_list": "Not In List"
+          },
+          "input_type": {
+            "type": "select",
+            "option_type": "api",
+            "multiple": true,
+            "endpoint": "http:\/\/localhost\/quasar\/wp-json\/disco\/v1\/search\/customer\/?search="
+          },
+          "fields": {
+            "compare": "",
+            "condition": "",
+            "compare_with": "",
+            "operator": ""
+          }
+        },
+        "customer_user": {
+          "title": "User",
+          "component": "string",
+          "condition": {
+            "in_list": "In List",
+            "not_in_list": "Not In List"
+          },
+          "input_type": {
+            "type": "select",
+            "option_type": "api",
+            "multiple": true,
+            "endpoint": "http:\/\/localhost\/quasar\/wp-json\/disco\/v1\/search\/customer\/?search="
+          },
+          "fields": {
+            "compare": "",
+            "condition": "",
+            "compare_with": "",
+            "operator": ""
+          }
+        },
+        "customer_is_logged_in": {
+          "title": "Is Logged In",
+          "component": "string",
+          "condition": {
+            "in_list": "In List",
+            "not_in_list": "Not In List"
+          },
+          "input_type": {
+            "type": "select",
+            "option_type": "manual",
+            "multiple": false,
+            "options": {
+              "yes": "Yes",
+              "no": "No"
+            }
+          },
+          "fields": {
+            "compare": "",
+            "condition": "",
+            "compare_with": "",
+            "operator": ""
+          }
+        },
+        "customer_user_role": {
+          "title": "User Role",
+          "component": "string",
+          "condition": {
+            "in_list": "In List",
+            "not_in_list": "Not In List"
+          },
+          "input_type": {
+            "type": "select",
+            "option_type": "manual",
+            "multiple": true,
+            "options": {
+              "administrator": "Administrator",
+              "editor": "Editor",
+              "author": "Author",
+              "contributor": "Contributor",
+              "subscriber": "Subscriber",
+              "customer": "Customer",
+              "shop_manager": "Shop manager"
+            }
+          },
+          "fields": {
+            "compare": "",
+            "condition": "",
+            "compare_with": "",
+            "operator": ""
+          }
+        },
+        "customer_country": {
+          "title": "Country",
+          "component": "string",
+          "condition": {
+            "in_list": "In List",
+            "not_in_list": "Not In List"
+          },
+          "input_type": {
+            "type": "select",
+            "option_type": "api",
+            "multiple": true,
+            "endpoint": "http:\/\/localhost\/quasar\/wp-json\/disco\/v1\/search\/country\/?search="
+          },
+          "fields": {
+            "compare": "",
+            "condition": "",
+            "compare_with": "",
+            "operator": ""
+          }
+        },
+        "customer_zip": {
+          "title": "Zip",
+          "component": "string",
+          "condition": {
+            "equal": "Equal",
+            "not_equal": "Not Equal",
+            "contain": "Contain",
+            "not_contain": "Does Not Contain",
+            "start_with": "Start With",
+            "end_with": "End With"
+          },
+          "input_type": "text",
+          "fields": {
+            "compare": "",
+            "condition": "",
+            "compare_with": "",
+            "operator": ""
+          }
+        }
+      }
+    },
+    {
+      "optionGroup": "Customer Purchase History",
+      "options": {
+        "customer_history_first_order": {
+          "title": "Is First Order",
+          "component": "string",
+          "condition": {
+            "in_list": "In List",
+            "not_in_list": "Not In List"
+          },
+          "input_type": {
+            "type": "select",
+            "option_type": "manual",
+            "multiple": false,
+            "options": {
+              "yes": "Yes",
+              "no": "No"
+            }
+          },
+          "fields": {
+            "compare": "",
+            "condition": "",
+            "compare_with": "",
+            "operator": ""
+          }
+        },
+        "customer_history_last_order_date": {
+          "title": "Last Order Date",
+          "component": "string",
+          "condition": {
+            "equal": "Equal",
+            "not_equal": "Not Equal",
+            "greater": "Greater Than",
+            "greater_equal": "Greater Than or Equal",
+            "lesser": "Less Than",
+            "lesser_equal": "Less Than or Equal",
+            "between": "Between",
+            "date_between": "Date Between",
+            "within_past": "Within Past",
+            "earlier_than": "Earlier Than"
+          },
+          "input_type": "date",
+          "fields": {
+            "compare": "",
+            "condition": "",
+            "compare_with": "",
+            "operator": ""
+          }
+        },
+        "customer_history_last_order_amount": {
+          "title": "Last Order Amount",
+          "component": "string",
+          "condition": {
+            "equal": "Equal",
+            "not_equal": "Not Equal",
+            "contain": "Contain",
+            "not_contain": "Does Not Contain",
+            "greater": "Greater Than",
+            "greater_equal": "Greater Than or Equal",
+            "lesser": "Less Than",
+            "lesser_equal": "Less Than or Equal",
+            "between": "Between"
+          },
+          "input_type": "number",
+          "fields": {
+            "compare": "",
+            "condition": "",
+            "compare_with": "",
+            "operator": ""
+          }
+        },
+        "customer_history_total_order_made": {
+          "title": "Number of Order Made By Customer",
+          "component": "string",
+          "condition": {
+            "equal": "Equal",
+            "not_equal": "Not Equal",
+            "contain": "Contain",
+            "not_contain": "Does Not Contain",
+            "greater": "Greater Than",
+            "greater_equal": "Greater Than or Equal",
+            "lesser": "Less Than",
+            "lesser_equal": "Less Than or Equal",
+            "between": "Between"
+          },
+          "input_type": "number",
+          "fields": {
+            "compare": "",
+            "condition": "",
+            "compare_with": "",
+            "operator": ""
+          }
+        },
+        "customer_history_total_amount_sold": {
+          "title": "Total Amount Spent By Customer",
+          "component": "string",
+          "condition": {
+            "equal": "Equal",
+            "not_equal": "Not Equal",
+            "contain": "Contain",
+            "not_contain": "Does Not Contain",
+            "greater": "Greater Than",
+            "greater_equal": "Greater Than or Equal",
+            "lesser": "Less Than",
+            "lesser_equal": "Less Than or Equal",
+            "between": "Between"
+          },
+          "input_type": "number",
+          "fields": {
+            "compare": "",
+            "condition": "",
+            "compare_with": "",
+            "operator": ""
+          }
+        },
+        "customer_history_total_quantity_sold": {
+          "title": "Total Quantities Bought By Customer",
+          "component": "string",
+          "condition": {
+            "equal": "Equal",
+            "not_equal": "Not Equal",
+            "contain": "Contain",
+            "not_contain": "Does Not Contain",
+            "greater": "Greater Than",
+            "greater_equal": "Greater Than or Equal",
+            "lesser": "Less Than",
+            "lesser_equal": "Less Than or Equal",
+            "between": "Between"
+          },
+          "input_type": "number",
+          "fields": {
+            "compare": "",
+            "condition": "",
+            "compare_with": "",
+            "operator": ""
+          }
+        },
+        "customer_history_total_order_made_by_ids": {
+          "title": "Number of Order Made with Following Products",
+          "component": "string",
+          "condition": {
+            "in_list": "In List",
+            "not_in_list": "Not In List"
+          },
+          "input_type": {
+            "type": "select",
+            "option_type": "api",
+            "multiple": true,
+            "endpoint": "http:\/\/localhost\/quasar\/wp-json\/disco\/v1\/search\/product\/?search="
+          },
+          "fields": {
+            "compare": "",
+            "condition": "",
+            "compare_with": "",
+            "operator": ""
+          }
+        },
+        "customer_history_total_amount_sold_by_ids": {
+          "title": "Number of Amount Sold with Following Products",
+          "component": "string",
+          "condition": {
+            "in_list": "In List",
+            "not_in_list": "Not In List"
+          },
+          "input_type": {
+            "type": "select",
+            "option_type": "api",
+            "multiple": true,
+            "endpoint": "http:\/\/localhost\/quasar\/wp-json\/disco\/v1\/search\/product\/?search="
+          },
+          "fields": {
+            "compare": "",
+            "condition": "",
+            "compare_with": "",
+            "operator": ""
+          }
+        },
+        "customer_history_total_quantity_sold_by_ids": {
+          "title": "Number of Quantities Sold with Following Products",
+          "component": "string",
+          "condition": {
+            "in_list": "In List",
+            "not_in_list": "Not In List"
+          },
+          "input_type": {
+            "type": "select",
+            "option_type": "api",
+            "multiple": true,
+            "endpoint": "http:\/\/localhost\/quasar\/wp-json\/disco\/v1\/search\/product\/?search="
+          },
+          "fields": {
+            "compare": "",
+            "condition": "",
+            "compare_with": "",
+            "operator": ""
+          }
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+/** Import the shared style */
+@import "custom_props";
+
+// This stylesheet is used to style the admin of WordPress.
+
+// Dashboard
+#dashboard_right_now a.demo-count::before {
+	content: "\f115";
+}
+
+body {
+	background-color: #fff !important;
+}
+
+input[type=text] {
+	&:focus {
+		box-shadow: none;
+	}
+}
+
+.Toastify__toast-container {
+	z-index: 99999;
+}
+
+#adminmenu div.wp-menu-image {
+	float: left;
+	width: 36px;
+	height: 34px;
+	margin: 0;
+	text-align: center;
+}

@@ -1,0 +1,38 @@
+grumphp:
+  ignore_unstaged_changes: false
+  tasks:
+    composer:
+      with_dependencies: false
+      strict: false
+    phpcs:
+      standard: CodeatCodingStandard
+      exclude: ['Generic.Commenting.Todo']
+      whitelist_patterns: [
+        'rest/',
+        'app/',
+        'backend/',
+        'assets/',
+        'engine/',
+        'frontend/',
+        'functions/',
+      ]
+      ignore_patterns: [ '/vendor/', '/tests/', '/assets/build', '/functions/' ]
+    #        phpmd:
+    #            exclude: ['/vendor/', '/tests/', '/assets/build']
+    phpstan:
+      configuration: phpstan.neon
+      triggered_by: [ 'php' ]
+      ignore_patterns: [ '/vendor/' ]
+      memory_limit: 1G
+    codeception:
+      config_file: ~
+      fail_fast: false
+      suite: wpunit
+      test: ~
+    git_blacklist:
+      keywords:
+        - 'die('
+        - 'print_r('
+        - 'var_dump('
+      triggered_by: [ 'php' ]
+      ignore_patterns: [ 'disco.php' ]
